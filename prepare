@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+function permissions($dir)
+{
+	umask(0000);
+	if (!is_dir($dir)) {
+		@mkdir($dir, 0777, TRUE);
+
+	} else {
+		@chmod($dir, 0777);
+	}
+}
+
+permissions(__DIR__ . '/logs');
+permissions(__DIR__ . '/cache');
+permissions(__DIR__ . '/cache/configs');
+permissions(__DIR__ . '/cache/Smarty');
+permissions(__DIR__ . '/cache/templates_c');
+
+
+//- install composer
+system('composer install');
+//system('rm ' . escapeshellarg(__FILE__));
