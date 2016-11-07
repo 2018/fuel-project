@@ -12,6 +12,11 @@ FuelPHP application with Eshop package.
  
 * Web server document root in /public
 
+# Authentication
+
+    User name:  user
+    Password:   password
+
 # Documentation
 
 See http://fuelphp.com/docs/
