@@ -21,4 +21,9 @@ permissions(__DIR__ . '/cache/templates_c');
 
 //- install composer
 system('composer install');
+system('git submodule init');
+system('git submodule update');
+system('php composer.phar update');
+system('php oil refine migrate -modules');
+
 //system('rm ' . escapeshellarg(__FILE__));

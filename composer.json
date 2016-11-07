@@ -22,13 +22,5 @@
   "config": {
     "vendor-dir": "fuel/vendor"
   },
-  "scripts": {
-    "post-install-cmd": [
-      "git submodule init",
-      "git submodule update",
-      "php composer.phar update",
-      "php oil refine migrate -modules"
-    ]
-  },
   "minimum-stability": "dev"
 }
