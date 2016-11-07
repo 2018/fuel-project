@@ -2,12 +2,16 @@
 
 FuelPHP application with Eshop package.
 
-# Instalation
+# Installation
 
-In project root type:  
+* Rename file /app/config/development/db.sample.php to /app/config/development/db.php
+* Edit your database settings in /app/config/development/db.php
+* In terminal go to the project root and type:  
 
-    php prepare
+        php prepare
  
+* Web server document root in /public
+
 # Documentation
 
 See http://fuelphp.com/docs/
